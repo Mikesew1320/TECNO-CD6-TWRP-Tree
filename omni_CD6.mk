@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/TECNO/CD6
-
 # Release name
 PRODUCT_RELEASE_NAME := TECNO-CD6
 
@@ -24,9 +22,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
-
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/TECNO/CD6/recovery/root,recovery/root) \
-    device/TECNO/CD6/prebuilt/dtb:dtb.img
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := CD6
@@ -38,11 +33,3 @@ PRODUCT_MANUFACTURER := TECNO MOBILE LIMITED
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
-	
-# Resolution
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1600
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=CD6-OP \
-    PRODUCT_DEVICE=TECNO-CD6
