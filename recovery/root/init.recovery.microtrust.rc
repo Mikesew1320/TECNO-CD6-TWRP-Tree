@@ -22,7 +22,6 @@ service teei_daemon /sbin/teei_daemon \
     group root
     disabled
     seclabel u:r:recovery:s0
-   # oneshot
 
 on boot
     chown system system /sys/bus/platform/devices/utos/dcih_notify_test

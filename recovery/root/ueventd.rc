@@ -23,12 +23,7 @@ subsystem sound
 # format for /dev rules: devname mode uid gid
 # format for /sys rules: nodename attr mode uid gid
 # shortcut: "mtd@NN" expands to "/dev/mtd/mtdNN"
-# ------------------- prize-add-pengzhipeng-20191122-start -------------------
-/dev/focaltech_fp         0660   system     system
-/dev/spidev0.0            0660   system     system
-/dev/spidev32765.0        0660   system     system
-/dev/spidev2.0            0660   system     system
-# ------------------- prize-add-pengzhipeng-20191122 end ---------------------
+
 /dev/null                 0666   root       root
 /dev/zero                 0666   root       root
 /dev/full                 0666   root       root
@@ -72,3 +67,7 @@ subsystem sound
 /sys/devices/virtual/usb_composite/*   enable      0664  root   system
 /sys/devices/system/cpu/cpu*   cpufreq/scaling_max_freq   0664  system system
 /sys/devices/system/cpu/cpu*   cpufreq/scaling_min_freq   0664  system system
+
+#SPD: add by yu.zhou2 for Bringup system monitor feature. @Start
+/dev/ensignal             0666   root       root
+#SPD: add by yu.zhou2 for Bringup system monitor feature. @End
