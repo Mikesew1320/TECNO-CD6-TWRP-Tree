@@ -1,5 +1,5 @@
 # For MTK DRM integration:
-service teei_daemon /sbin/teei_daemon \
+service teei_daemon /vendor/bin/teei_daemon \
     -r 020b0000000000000000000000000000 \
     -r 020f0000000000000000000000000000 \
     -r 06090000000000000000000000000000 \
@@ -13,15 +13,15 @@ service teei_daemon /sbin/teei_daemon \
     -r 07407000000000000000000000000000 \
     -r 05160000000000000000000000000000 \
     -r 91dba524a6e24909acc48abd7163121a \
-    -t 08030000000000000000000000000000 \
-    -t 85f630e0f0964c5fa2cc268ce04e3da3 \
-    -t 98fb95bcb4bf42d26473eae48690d7ea \
-    -t 7b66512021214487ba710a51d7ea78fe \
-    -t 09010000000000000000000000000000
+    -r 08030000000000000000000000000000 \
+    -r 85f630e0f0964c5fa2cc268ce04e3da3 \
+    -r 98fb95bcb4bf42d26473eae48690d7ea \
+    -r 7b66512021214487ba710a51d7ea78fe \
+    -r 09010000000000000000000000000000
     user root
     group root
     disabled
-    seclabel u:r:recovery:s0
+    seclabel u:recovery:s0
 
 on boot
     chown system system /sys/bus/platform/devices/utos/dcih_notify_test
@@ -29,8 +29,7 @@ on boot
     chown system system /sys/bus/platform/devices/utos/load_ut_drv
     chown system system /sys/bus/platform/devices/utos/unload_ut_drv
     chown system system /sys/bus/platform/devices/utos/notify_ree_dci_handler
-
-#for All mode
+#BSP:add XLLLHLWS-62 by lichen 20190924 start
 on load_persist_props_action
     write /proc/bootprof "start teei cfg (on load_persist_props_action)"
     mkdir /data/vendor/thh
@@ -102,9 +101,13 @@ on load_persist_props_action
     chmod 0771 /data/vendor/key_provisioning
     chown system system /data/vendor/key_provisioning
     write /proc/bootprof "start teei cfg end (on load_persist_props_action)"
+#BSP:add XLLLHLWS-62 by lichen 20190924 end
 
-on property:crypto.ready=1
-    write /proc/bootprof "start teei cfg (on trigger_restart_framework)"
+#BSP:modify KBBGHLESGQ-67 by wang.qin 20190719 start
+#for All mode
+#on load_persist_props_action
+on property:vold.decrypt=trigger_restart_framework
+    write /proc/bootprof "start teei cfg (on vold.decrypt=trigger_restart_framework)"
     mkdir /data/vendor/thh
     mkdir /data/vendor/thh/system
     mkdir /data/vendor/thh/tee_00
@@ -126,9 +129,7 @@ on property:crypto.ready=1
     mkdir /data/vendor/thh/tee_0E
     mkdir /data/vendor/thh/tee_0F
     mkdir /data/vendor/thh/ta
-    #prize wyq 20200221 for tee system-start
     mkdir /data/vendor/key_provisioning
-    #prize wyq 20200221 for tee system-end
     chmod 0755 /data/vendor/thh
     chown system system /data/vendor/thh
     chmod 0755 /data/vendor/thh/tee_00
@@ -173,11 +174,10 @@ on property:crypto.ready=1
     chmod 0755 /data/vendor/thh/system
     chown system system /data/vendor/thh/system
     restorecon_recursive /data/vendor/thh
-    #prize wyq 20200221 for tee system-end
     chmod 0771 /data/vendor/key_provisioning
     chown system system /data/vendor/key_provisioning
-    #prize wyq 20200221 for tee system-end
-    write /proc/bootprof "start teei cfg end (on trigger_restart_framework)"
+    write /proc/bootprof "start teei cfg end (on vold.decrypt=trigger_restart_framework)"
+#BSP:modify KBBGHLESGQ-67 by wang.qin 20190719 end
 
 on post-fs
     # Set /mnt/vendor/persist/rpmb
