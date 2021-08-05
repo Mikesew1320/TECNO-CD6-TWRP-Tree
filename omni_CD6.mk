@@ -18,7 +18,11 @@
 PRODUCT_RELEASE_NAME := TECNO-CD6
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+
+# Define shipped A10 With Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
