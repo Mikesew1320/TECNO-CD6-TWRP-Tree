@@ -26,7 +26,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery
+    fastbootd
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := CD6
