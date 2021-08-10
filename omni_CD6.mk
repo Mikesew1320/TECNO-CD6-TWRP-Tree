@@ -25,7 +25,7 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
     $(LOCAL_PATH)/prebuilt/dtb:dtb.img
