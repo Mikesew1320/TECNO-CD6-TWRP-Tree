@@ -120,6 +120,7 @@ TW_DEFAULT_BRIGHTNESS := 1200
 TW_SCREEN_BLANK_ON_BOOT := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
+TW_DEVICE_VERSION := Mikesew1320
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
@@ -131,6 +132,7 @@ TARGET_USES_LOGD := true
 # SHRP
 SHRP_DARK := true
 SHRP_FLASH := 1
+SHRP_OFFICIAL := true
 SHRP_CUSTOM_FLASHLIGHT := true
 SHRP_FONP_1 := /sys/devices/virtual/torch/torch/torch_level
 SHRP_FLASH_MAX_BRIGHTNESS := 1
