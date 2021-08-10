@@ -27,8 +27,8 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
-    $(LOCAL_PATH)/prebuilt/dtb:dtb.img
+#PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
+ #   $(LOCAL_PATH)/prebuilt/dtb:dtb.img
 
 # Fastbootd
 PRODUCT_PACKAGES += \
