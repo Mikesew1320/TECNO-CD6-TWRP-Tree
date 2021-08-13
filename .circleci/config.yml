@@ -1,9 +1,9 @@
 name: SHRP CI
 on:
-  workflow_dispatch:
-    inputs:
+ # workflow_dispatch:
+   # inputs:
       pushtosf:
-        description: 'set this to true if you wanna push to sf (all small)'
+       # description: 'set this to true if you wanna push to sf (all small)'
         required: true
 env:
   MANIFEST: "git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0"
