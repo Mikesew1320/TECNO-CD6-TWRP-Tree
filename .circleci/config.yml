@@ -10,7 +10,7 @@ env:
   # Recovery Manifest URL with -b branch
   DT_LINK: "https://github.com/Mikesew1320/TECNO-CD6-SHRP-Tree/"
   # Your Device Tree Link
-  VENDOR: ""
+  VENDOR: "CD6"
   # Your Device's Vendor name as in used inside DT. Example: xiaomi, samsung, asus, etc.
   CODENAME: "TECNO_Camon_15_Air"
   # Your Device's Codename as in used inside DT." Example: nikel, phoenix, ginkgo, etc.
