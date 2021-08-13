@@ -33,7 +33,7 @@ Release Date | Apr 13, 2020
 
 ## Build Date 
 
-10-08-2021 GC 7:52:45 GMT+3
+2021-08-13 GC 8:12:00 GMT+3 <b>Made with ❤️ in [Ethiopia](https://en.m.wikipedia.org/wiki/Ethiopia), [Jimmaa](https://en.m.wikipedia.org/wiki/Jimma)</b>
 
 ## Credit
 
