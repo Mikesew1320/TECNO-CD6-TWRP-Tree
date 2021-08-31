@@ -1,4 +1,4 @@
-SHRP Device configuration for TECNO Camon 15 Air
+TWRP Device configuration for TECNO Camon 15 Air
 ============================================================
 Basic   | Specification Sheet
 -------:|:-------------------------
@@ -16,7 +16,7 @@ Rear Depth Sensor  | 2.0 MP
 Front Camera | 8.0 MP Dual-LED flash, HDR
 Release Date | Apr 13, 2020
 
-# SKYHAWK RECOVERY PROJECT | RECOVERY TREE FOR TECNO CAMON 15 Air
+# TEANWIN RECOVERY PROJECT | RECOVERY TREE FOR TECNO CAMON 15 Air
 
 ## Features:
 
@@ -27,13 +27,11 @@ Release Date | Apr 13, 2020
 
 - Sync latest sources.
 - Fixed FastbootD.
-- Fixed Flashlight.
 - Enabled backup and flash support for all mandatory partitions. 
-- Fixed status bar padding.
 
 ## Build Date 
 
-2021-08-13 GC 8:12:00 GMT+3 <b>Made with ❤️ in [Ethiopia](https://en.m.wikipedia.org/wiki/Ethiopia), [Jimmaa](https://en.m.wikipedia.org/wiki/Jimma)</b>
+2021-08-31 GC 8:12:00 GMT+3 <b>Made with ❤️ in [Ethiopia](https://en.m.wikipedia.org/wiki/Ethiopia), [Jimmaa](https://en.m.wikipedia.org/wiki/Jimma)</b>
 
 ## Credit
 
