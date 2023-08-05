@@ -20,8 +20,7 @@ Release Date | Apr 13, 2020
 
 ## Features:
 
-- All SHRP features are expected to be working fine!
-- Default dark themed.
+- All TWRP features are expected to be working fine!
 
 ## What's New?
 
@@ -31,7 +30,7 @@ Release Date | Apr 13, 2020
 
 ## Build Date 
 
-2021-08-31 GC 8:12:00 GMT+3 <b>Made with ❤️ in [Ethiopia](https://en.m.wikipedia.org/wiki/Ethiopia), [Jimmaa](https://en.m.wikipedia.org/wiki/Jimma)</b>
+2021-08-31 GC 8:12:00 GMT+3 <b>Made with ❤️ in [Ethiopia](https://en.m.wikipedia.org/wiki/Ethiopia), [Jimma](https://en.m.wikipedia.org/wiki/Jimma)</b>
 
 ## Credit
 
