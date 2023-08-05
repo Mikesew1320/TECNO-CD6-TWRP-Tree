@@ -16,7 +16,7 @@ Rear Depth Sensor  | 2.0 MP
 Front Camera | 8.0 MP Dual-LED flash, HDR
 Release Date | Apr 13, 2020
 
-# TEANWIN RECOVERY PROJECT | RECOVERY TREE FOR TECNO CAMON 15 Air
+# TEAMWIN RECOVERY PROJECT | RECOVERY TREE FOR TECNO CAMON 15 Air
 
 ## Features:
 
