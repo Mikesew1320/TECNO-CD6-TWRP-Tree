@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/omni_CD6.mk
+   $(LOCAL_DIR)/twrp_CD6.mk
