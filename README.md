@@ -28,7 +28,7 @@ Release Date | Apr 13, 2020
 - Fixed FastbootD.
 - Enabled backup and flash support for all mandatory partitions. 
 
-## Build Date 
+## Build Date 😀😀😀😀
 
 2021-08-31 GC 8:12:00 GMT+3 <b>Made with ❤️ in [Ethiopia](https://en.m.wikipedia.org/wiki/Ethiopia), [Jimma](https://en.m.wikipedia.org/wiki/Jimma)</b>
 
